@@ -10,7 +10,7 @@ jobs:
         id: selftest
         uses: Secful/python-container-action/output-action@master
 
-      - name: Self test
+      - name: Print test
         id: printest
         uses: Secful/python-container-action/print-action@master
 
