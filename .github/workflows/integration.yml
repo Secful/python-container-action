@@ -5,11 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+
       - name: Self test
         id: selftest
+        uses: Secful/python-container-action/output-action@master
 
-        # Put your action repo here
-        uses: jacobtomlinson/python-container-action@master
+      - name: Self test
+        id: printest
+        uses: Secful/python-container-action/print-action@master
 
       - name: Check outputs
         run: |
